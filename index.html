@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Study Planner Pro
+    </title>
+
+    <!-- Main CSS -->
+    <link 
+    rel="stylesheet" 
+    href="style.css">
+
+    <!-- Google Font -->
+    <link 
+    rel="preconnect" 
+    href="https://fonts.googleapis.com">
+
+    <link 
+    rel="preconnect" 
+    href="https://fonts.gstatic.com" 
+    crossorigin>
+
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" 
+    rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" 
+    rel="stylesheet">
+
+</head>
+
+<body data-theme="dark">
+
+    <!-- APP ROOT -->
+
+    <div class="app">
+
+        <!-- 
+            Sidebar
+            Part 2 will be here
+        -->
+
+        <!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <!-- LOGO -->
+
+    <div class="logo">
+
+        <div class="logo-icon">
+
+            <!-- SVG PLACEHOLDER -->
+
+            <svg 
+            class="icon"
+            viewBox="0 0 24 24">
+
+                <use href="#logo-icon"></use>
+
+            </svg>
+
+        </div>
+
+        <div class="logo-text">
+
+            <h1>
+                Study Planner
+            </h1>
+
+            <span>
+                Pro
+            </span>
+
+        </div>
+
+    </div>
+<!-- SVG SPRITE -->
+
+<svg 
+style="display:none;">
+
+
+    <symbol id="logo-icon" viewBox="0 0 24 24">
+
+        <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+
+        <path d="M2 17L12 22L22 17"/>
+
+    </symbol>
+
+
+
+
+
+    <symbol id="dashboard-icon" viewBox="0 0 24 24">
+
+        <rect x="3" y="3" width="7" height="7"/>
+
+        <rect x="14" y="3" width="7" height="7"/>
+
+        <rect x="3" y="14" width="7" height="7"/>
+
+        <rect x="14" y="14" width="7" height="7"/>
+
+    </symbol>
+
+
+
+
+
+    <symbol id="task-icon" viewBox="0 0 24 24">
+
+        <path d="M9 11L12 14L22 4"/>
+
+        <path d="M21 12V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H16"/>
+
+    </symbol>
+
+
+
+
+
+    <symbol id="calendar-icon" viewBox="0 0 24 24">
+
+        <rect x="3" y="4" width="18" height="18"/>
+
+        <line x1="16" y1="2" x2="16" y2="6"/>
+
+        <line x1="8" y1="2" x2="8" y2="6"/>
+
+    </symbol>
+
+
+
+
+
+    <symbol id="chart-icon" viewBox="0 0 24 24">
+
+        <line x1="18" y1="20" x2="18" y2="10"/>
+
+        <line x1="12" y1="20" x2="12" y2="4"/>
+
+        <line x1="6" y1="20" x2="6" y2="14"/>
+
+    </symbol>
+
+
+
+
+
+    <symbol id="settings-icon" viewBox="0 0 24 24">
+
+        <circle cx="12" cy="12" r="3"/>
+
+        <path d="M19.4 15A1.65 1.65 0 0 0 20 13.6"/>
+
+    </symbol>
+
+
+
+
+
+    <symbol id="sun-icon" viewBox="0 0 24 24">
+
+        <circle cx="12" cy="12" r="5"/>
+
+    </symbol>
+
+
+
+
+    <symbol id="moon-icon" viewBox="0 0 24 24">
+
+        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z">
+
+    </symbol>
+
+    <symbol id="user-icon" viewBox="0 0 24 24">
+
+        <circle cx="12" cy="7" r="4"/>
+
+        <path d="M5 21C5 17 8 15 12 15C16 15 19 17 19 21"/>
+
+    </symbol>
+
+
+
+
+    <symbol id="play-icon" viewBox="0 0 24 24">
+
+        <polygon points="5 3 19 12 5 21"/>
+
+    </symbol>
+
+
+
+    <symbol id="pause-icon" viewBox="0 0 24 24">
+
+        <rect x="6" y="4" width="4" height="16"/>
+
+        <rect x="14" y="4" width="4" height="16"/>
+
+    </symbol>
+
+
+
+
+    <symbol id="reset-icon" viewBox="0 0 24 24">
+
+        <path d="M3 12A9 9 0 1 0 12 3"/>
+
+    </symbol>
+
+
+
+    <symbol id="close-icon" viewBox="0 0 24 24">
+
+        <line x1="18" y1="6" x2="6" y2="18"/>
+
+        <line x1="6" y1="6" x2="18" y2="18"/>
+
+    </symbol>
+
+
+
+</svg>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navigation">
+
+        <button 
+        class="nav-btn active"
+        data-page="dashboard">
+
+            <svg 
+            class="icon"
+            viewBox="0 0 24 24">
+
+                <use href="#dashboard-icon"></use>
+
+            </svg>
+
+            <span>
+                Dashboard
+            </span>
+
+        </button>
+
+        <button 
+        class="nav-btn"
+        data-page="tasks">
+
+            <svg 
+            class="icon"
+            viewBox="0 0 24 24">
+
+                <use href="#task-icon"></use>
+
+            </svg>
+
+            <span>
+                Tasks
+            </span>
+
+        </button>
+
+        <button 
+        class="nav-btn"
+        data-page="calendar">
+
+            <svg 
+            class="icon"
+            viewBox="0 0 24 24">
+
+                <use href="#calendar-icon"></use>
+
+            </svg>
+
+            <span>
+                Calendar
+            </span>
+
+        </button>
+
+        <button 
+        class="nav-btn"
+        data-page="progress">
+
+            <svg 
+            class="icon"
+            viewBox="0 0 24 24">
+
+                <use href="#chart-icon"></use>
+
+            </svg>
+
+            <span>
+                Progress
+            </span>
+
+        </button>
+
+        <button 
+        class="nav-btn"
+        data-page="settings">
+
+            <svg 
+            class="icon"
+            viewBox="0 0 24 24">
+
+                <use href="#settings-icon"></use>
+
+            </svg>
+
+            <span>
+                Settings
+            </span>
+
+        </button>
+
+    </nav>
+
+    <!-- SIDEBAR FOOTER -->
+
+    <div class="sidebar-footer">
+
+        <p>
+            Study Planner Pro 
+            version 4.0
+        </p>
+
+        <small>
+            Developed By Abtin Ostovari
+        </small>
+
+    </div>
+
+</aside>
+
+        <!-- MAIN AREA -->
+
+        <main class="main">
+
+            <!-- 
+                Header
+                Part 3 will be here
+            -->
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <!-- PAGE TITLE -->
+
+    <div class="header-left">
+
+        <h2 id="pageTitle">
+
+            Dashboard
+
+        </h2>
+
+        <p class="subtitle">
+
+            Plan your study. Track your progress.
+
+        </p>
+
+    </div>
+
+    <!-- HEADER ACTIONS -->
+
+    <div class="header-actions">
+
+        <!-- Theme Button -->
+
+        <button
+
+        id="themeToggle"
+
+        class="theme-toggle">
+
+            <svg
+
+            class="icon"
+
+            viewBox="0 0 24 24">
+
+                <use href="#sun-icon"></use>
+
+            </svg>
+
+        </button>
+
+        <!-- Profile Placeholder -->
+
+        <button
+
+        class="profile-btn"
+        id="profileBtn">
+
+            <svg
+
+            class="icon"
+
+            viewBox="0 0 24 24">
+
+                <use href="#user-icon"></use>
+
+            </svg>
+
+        </button>
+
+    </div>
+
+</header>
+<!-- STUDY TIMER -->
+
+
+
+<!-- ADD TASK MODAL -->
+
+
+            <!-- 
+                Dynamic Content
+
+                JavaScript renders pages here
+
+            -->
+
+            <section 
+            id="content"
+            class="content">
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- JavaScript -->
+
+<div id="profileModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeProfileModal">&times;</span>
+
+        <h2> User Profile </h2>
+
+        <div id="profileInfo"></div>
+
+    </div>
+
+</div>
+
+<script src="assests/chart.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
